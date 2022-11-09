@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="2" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1332" height="1452"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="d2b6f" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="9d39" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fecad" class="javax.swing.JButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                    <minimum-size width="150" height="150"/>
+                    <preferred-size width="150" height="150"/>
+                    <maximum-size width="150" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16769727"/>
+                  <borderPainted value="false"/>
+                  <foreground color="-15287533"/>
+                  <hideActionText value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="de060" class="javax.swing.JButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                    <minimum-size width="150" height="150"/>
+                    <preferred-size width="150" height="150"/>
+                    <maximum-size width="150" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16769727"/>
+                  <borderPainted value="false"/>
+                  <foreground color="-15287533"/>
+                  <hideActionText value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="d46fc" class="javax.swing.JButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                    <minimum-size width="150" height="150"/>
+                    <preferred-size width="150" height="150"/>
+                    <maximum-size width="150" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16769727"/>
+                  <borderPainted value="false"/>
+                  <foreground color="-15287533"/>
+                  <hideActionText value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="19c69" class="javax.swing.JButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                    <minimum-size width="150" height="150"/>
+                    <preferred-size width="150" height="150"/>
+                    <maximum-size width="150" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16769727"/>
+                  <borderPainted value="false"/>
+                  <foreground color="-15287533"/>
+                  <hideActionText value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="7a6df" class="javax.swing.JButton" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                    <minimum-size width="150" height="150"/>
+                    <preferred-size width="150" height="150"/>
+                    <maximum-size width="150" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16769727"/>
+                  <borderPainted value="false"/>
+                  <foreground color="-15287533"/>
+                  <hideActionText value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="d2e32" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <foreground color="-4516574"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="87029" class="javax.swing.JButton" binding="button1" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-16769727"/>
+              <borderPainted value="true"/>
+              <foreground color="-4521703"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="70bb8" class="javax.swing.JButton" binding="button2">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-16769727"/>
+              <borderPainted value="true"/>
+              <foreground color="-4521703"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="c90a3" class="javax.swing.JButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-16769727"/>
+              <borderPainted value="true"/>
+              <foreground color="-4521703"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="da365" class="javax.swing.JButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-16769727"/>
+              <borderPainted value="true"/>
+              <foreground color="-4521703"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="13972" class="javax.swing.JButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-16769727"/>
+              <borderPainted value="true"/>
+              <foreground color="-4521703"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="2e2bf" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="605e4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="38" height="54"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Skor : "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="cc3e4" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6eab9" class="javax.swing.JButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-16769727"/>
+              <borderPainted value="true"/>
+              <foreground color="-4521703"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="fdf0b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6d42" class="javax.swing.JButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-16769727"/>
+              <borderPainted value="true"/>
+              <foreground color="-4521703"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="7d77e" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="521b3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Label"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
