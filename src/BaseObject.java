@@ -1,9 +1,12 @@
-public abstract class BaseObject {
+public abstract class BaseObject implements IBaseObject {
 
     public int dayaniklilik;
     public int seviyePuani;
 
     public BaseObject() {
+        //dayanıklılık de ̆geri tu ̈m nesneler ic ̧in 20, ba ̧slangı ̧c seviye puanı 0’dır.
+        this.dayaniklilik = 20;
+        this.seviyePuani = 0;
     }
 
     public BaseObject(int dayaniklilik, int seviyePuani) {
@@ -11,11 +14,11 @@ public abstract class BaseObject {
         this.seviyePuani = seviyePuani;
     }
 
-    public abstract void etkiHesapla();
+    public abstract int etkiHesapla(IBaseObject rakip);
 
-    public abstract void nesnePuaniGoster();
+    public abstract int[] nesnePuaniGoster();
 
-    public abstract void durumGuncelle();
+    public abstract void durumGuncelle(IBaseObject rakip);
 
     public int getDayaniklilik() {
         return dayaniklilik;

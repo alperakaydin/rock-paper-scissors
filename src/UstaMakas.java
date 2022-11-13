@@ -1,4 +1,4 @@
-public class UstaMakas extends Makas {
+public class UstaMakas extends Makas implements IBaseObject {
     public int hiz;
 
     public int getHiz() {
@@ -9,7 +9,9 @@ public class UstaMakas extends Makas {
         this.hiz = hiz;
     }
 
-    public UstaMakas() {}
+    public UstaMakas() {
+        this.hiz = 2;
+    }
 
     public UstaMakas(int dayaniklilik, int seviyePuani, int keskinlik, int hiz) {
         super(dayaniklilik, seviyePuani, keskinlik);
@@ -17,17 +19,17 @@ public class UstaMakas extends Makas {
     }
 
     @Override
-    public void etkiHesapla() {
-        super.etkiHesapla();
+    public int etkiHesapla(IBaseObject rakip) {
+        return 0;
     }
 
     @Override
-    public void nesnePuaniGoster() {
-        super.nesnePuaniGoster();
+    public int[] nesnePuaniGoster() {
+        int[] dizi = new int[5];
+        dizi[0] = this.dayaniklilik;
+        dizi[1] = this.seviyePuani;
+        return dizi;
     }
 
-    @Override
-    public void durumGuncelle() {
-        super.durumGuncelle();
-    }
+
 }

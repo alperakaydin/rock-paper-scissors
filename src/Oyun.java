@@ -1,11 +1,31 @@
 public class Oyun {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+    public Oyun() {
+
+
     }
 
-    Kullanici alper = new Kullanici();
-    Bilgisayar pc = new Bilgisayar();
+    public static void main(String[] args) {
 
+
+        Kullanici alper = new Kullanici();
+        Bilgisayar pc = new Bilgisayar();
+        pc.nesneSec();
+        //pc.list.remove(0);
+        //System.out.println(pc.skorGoster());
+
+        int[] secimList = {0, 1, 2, 1, 2};
+        alper.nesneSec(secimList);
+
+        new GUI(alper,pc);
+        //System.out.println(alper.skorGoster());
+
+
+
+
+
+
+    }
 
 
 }
