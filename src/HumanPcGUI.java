@@ -1,8 +1,6 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 
 public class HumanPcGUI extends JFrame {
     private JPanel mainPanel;
@@ -20,8 +18,9 @@ public class HumanPcGUI extends JFrame {
     private JButton btn_oyuncu1_select;
     private JButton btn_oyuncu2_select;
     private JLabel lbl_skor;
+    private JTextField tf_hmaxEl;
     private JButton button1;
-
+    private int el =0;
     private final Kullanici kullanici;
     private final Bilgisayar bilgisayar;
     private final OyunManager oyunManager;
@@ -60,6 +59,7 @@ public class HumanPcGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 OynaHelperGui(0);
+
             }
         });
         btn_oyuncu1_2.addActionListener(new ActionListener() {
@@ -96,6 +96,18 @@ public class HumanPcGUI extends JFrame {
     }
 
     private void OynaHelperGui(int selectBtn) {
+
+        int maxElSayisi = Integer.parseInt(tf_hmaxEl.getText());
+        el++;
+        if (maxElSayisi<=el){
+            String sonuc;
+            if(100-kullanici.skorGoster() > 100-bilgisayar.skorGoster()){
+                sonuc = "Oyuncu1 Kazandı...";
+            }else {
+                sonuc = "Oyuncu2 Kazandı...";
+            }
+            JOptionPane.showMessageDialog(mainPanel,sonuc );
+        }
 
         int pcSelect = util.randomNumberGenerate(bilgisayar.list.size());
         while (true){ // Ölü kartları elemek için
