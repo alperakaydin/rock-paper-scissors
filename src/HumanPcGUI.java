@@ -78,7 +78,7 @@ public class HumanPcGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 OynaHelperGui(3);
-                buttonIconConfigure();
+
             }
         });
         btn_oyuncu1_5.addActionListener(new ActionListener() {
@@ -118,36 +118,33 @@ public class HumanPcGUI extends JFrame {
         kullanici.eliGoster();
         bilgisayar.eliGoster();
         buttonConfigure();
+        buttonIconConfigure();
         scoreUpdate();
     }
 
     private void buttonConfigure() {
         for (int i = 0; i < kullanici.list.size(); i++) {
-            if (kullanici.list.get(i).nesnePuaniGoster()[0] <= 0) {
-                //buttons[0][i].setVisible(false);
-            }
-            buttons[0][i].setText(kullanici.list.get(i).getClass().getName() + "\n D: " + kullanici.list.get(i).nesnePuaniGoster()[0] + "\n S: " + kullanici.list.get(i).nesnePuaniGoster()[1]);
+
+            buttons[0][i].setText(" D: " + kullanici.list.get(i).nesnePuaniGoster()[0] + "\n S: " + kullanici.list.get(i).nesnePuaniGoster()[1]);
         }
         for (int i = 0; i < bilgisayar.list.size(); i++) {
-            if (bilgisayar.list.get(i).nesnePuaniGoster()[0] <= 0) {
-                //buttons[1][i].setVisible(false);
-            }
-            buttons[1][i].setText(bilgisayar.list.get(i).getClass().getName() + "\n D: " + bilgisayar.list.get(i).nesnePuaniGoster()[0] + "\n S: " + bilgisayar.list.get(i).nesnePuaniGoster()[1]);
+
+            buttons[1][i].setText("D: " + bilgisayar.list.get(i).nesnePuaniGoster()[0] + "\n S: " + bilgisayar.list.get(i).nesnePuaniGoster()[1]);
         }
 
     }
     private void buttonIconConfigure(){
         for (int i = 0; i < kullanici.list.size(); i++) {
             if (kullanici.list.get(i) instanceof AgirTas){
-                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/tas.jpg"));
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/agirTas.jpeg"));
             } else if (kullanici.list.get(i) instanceof Tas) {
                 buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/tas.jpg"));
             } else if (kullanici.list.get(i) instanceof OzelKagit) {
-                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/kagit.jpg"));
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/OzelKagit.jpeg"));
             } else if (kullanici.list.get(i) instanceof Kagit) {
                 buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/kagit.jpg"));
             } else if (kullanici.list.get(i) instanceof UstaMakas) {
-                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/makas.jpg"));
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/ustaMakas.jpeg"));
             }else {
                 buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/makas.jpg"));
             }

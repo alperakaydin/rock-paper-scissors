@@ -209,28 +209,28 @@
         <children>
           <component id="4dd3d" class="javax.swing.JButton" binding="btn_oyuncu1_1">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false">
-                <minimum-size width="150" height="150"/>
-                <preferred-size width="150" height="150"/>
-                <maximum-size width="150" height="150"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="2" use-parent-layout="false">
+                <minimum-size width="300" height="150"/>
+                <preferred-size width="300" height="150"/>
+                <maximum-size width="300" height="150"/>
               </grid>
             </constraints>
             <properties>
               <background color="-16769727"/>
               <borderPainted value="false"/>
               <foreground color="-15287533"/>
-              <hideActionText value="true"/>
-              <horizontalTextPosition value="10"/>
-              <icon value="icons/kagit.jpg"/>
+              <hideActionText value="false"/>
+              <horizontalTextPosition value="11"/>
               <text value=""/>
+              <verticalTextPosition value="0"/>
             </properties>
           </component>
           <component id="ddd52" class="javax.swing.JButton" binding="btn_oyuncu1_5">
             <constraints>
-              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false">
-                <minimum-size width="150" height="150"/>
-                <preferred-size width="150" height="150"/>
-                <maximum-size width="150" height="150"/>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="2" use-parent-layout="false">
+                <minimum-size width="300" height="150"/>
+                <preferred-size width="300" height="150"/>
+                <maximum-size width="300" height="150"/>
               </grid>
             </constraints>
             <properties>
@@ -243,28 +243,28 @@
           </component>
           <component id="6c257" class="javax.swing.JButton" binding="btn_oyuncu1_2">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="3" anchor="0" fill="0" indent="2" use-parent-layout="false">
-                <minimum-size width="150" height="150"/>
-                <preferred-size width="150" height="150"/>
-                <maximum-size width="250" height="250"/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="3" use-parent-layout="false">
+                <minimum-size width="300" height="150"/>
+                <preferred-size width="300" height="150"/>
+                <maximum-size width="300" height="150"/>
               </grid>
             </constraints>
             <properties>
               <background color="-16769727"/>
               <borderPainted value="false"/>
               <foreground color="-15287533"/>
-              <hideActionText value="true"/>
+              <hideActionText value="false"/>
               <horizontalAlignment value="0"/>
-              <horizontalTextPosition value="0"/>
-              <text value="btn_oyuncu1_2"/>
+              <horizontalTextPosition value="11"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="8beab" class="javax.swing.JButton" binding="btn_oyuncu1_4">
             <constraints>
-              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false">
-                <minimum-size width="150" height="150"/>
-                <preferred-size width="150" height="150"/>
-                <maximum-size width="150" height="150"/>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="2" use-parent-layout="false">
+                <minimum-size width="300" height="150"/>
+                <preferred-size width="300" height="150"/>
+                <maximum-size width="300" height="150"/>
               </grid>
             </constraints>
             <properties>
@@ -277,10 +277,10 @@
           </component>
           <component id="49dd" class="javax.swing.JButton" binding="btn_oyuncu1_3">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false">
-                <minimum-size width="150" height="150"/>
-                <preferred-size width="150" height="150"/>
-                <maximum-size width="150" height="150"/>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="2" use-parent-layout="false">
+                <minimum-size width="300" height="150"/>
+                <preferred-size width="300" height="150"/>
+                <maximum-size width="300" height="150"/>
               </grid>
             </constraints>
             <properties>

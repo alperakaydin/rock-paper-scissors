@@ -15,20 +15,20 @@ public class OyunManager {
             buttons[0][oyuncu1.list.indexOf(oyuncuSecim1)].setVisible(false);
             System.out.println("oyuncu1 butonu silindi");
             //oyuncu1.list.indexOf(oyuncuSecim1) =
-            oyuncuSecim2.seviyePuani+=20;
+            oyuncuSecim2.seviyePuani+=30;
             System.out.println(OyuncuSecim2.getClass().getName() + " +20 Seviye Puanı Kazandı ...");
             if(oyuncuSecim2.seviyePuani >= 30){
 
+                //oyuncu2.list.remove(oyuncuSecim2);
 
-                oyuncu2.list.remove(oyuncuSecim2);
                 if (OyuncuSecim2 instanceof Tas){
-                    oyuncu2.list.add(new AgirTas());
+                    oyuncu2.list.set(oyuncu2.list.indexOf(oyuncuSecim2),new AgirTas());
                     System.out.println("Oyuncu2 AğırTaş nesnesi kazandı");
                 } else if (OyuncuSecim2 instanceof Makas) {
-                    oyuncu2.list.add(new UstaMakas());
+                    oyuncu2.list.set(oyuncu2.list.indexOf(oyuncuSecim2),new UstaMakas());
                     System.out.println("Oyuncu2 UstaMakas nesnesi kazandı");
                 } else if (OyuncuSecim2 instanceof Kagit) {
-                    oyuncu2.list.add(new OzelKagit());
+                    oyuncu2.list.set(oyuncu2.list.indexOf(oyuncuSecim2),new OzelKagit());
                     System.out.println("Oyuncu2 OzelKağıt nesnesi kazandı");
                 }
             }
@@ -37,19 +37,19 @@ public class OyunManager {
             System.out.println("oyuncu2 butonu silindi");
             //oyuncu2.list.remove(oyuncuSecim2);
 
-            oyuncuSecim1.seviyePuani+=20;
+            oyuncuSecim1.seviyePuani+=30;
             System.out.println(OyuncuSecim1.getClass().getName() + " +20 Seviye Puanı Kazandı ...");
             if(oyuncuSecim1.seviyePuani >= 30){
 
-                oyuncu1.list.remove(oyuncuSecim1);
+                //oyuncu1.list.remove(oyuncuSecim1);
                 if (OyuncuSecim1 instanceof Tas){
-                    oyuncu1.list.add(new AgirTas());
+                    oyuncu1.list.set(oyuncu1.list.indexOf(oyuncuSecim1),new AgirTas());
                     System.out.println("Oyuncu1 AğırTaş nesnesi kazandı");
                 } else if (OyuncuSecim1 instanceof Makas) {
-                    oyuncu1.list.add(new UstaMakas());
+                    oyuncu1.list.set(oyuncu1.list.indexOf(oyuncuSecim1),new UstaMakas());
                     System.out.println("Oyuncu1 UstaMakas nesnesi kazandı");
-                } else if (OyuncuSecim2 instanceof Kagit) {
-                    oyuncu1.list.add(new OzelKagit());
+                } else if (OyuncuSecim1 instanceof Kagit) {
+                    oyuncu1.list.set(oyuncu1.list.indexOf(oyuncuSecim1),new OzelKagit());
                     System.out.println("Oyuncu1 OzelKağıt nesnesi kazandı");
                 }
             }
