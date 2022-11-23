@@ -221,6 +221,7 @@
               <foreground color="-15287533"/>
               <hideActionText value="true"/>
               <horizontalTextPosition value="10"/>
+              <icon value="icons/kagit.jpg"/>
               <text value=""/>
             </properties>
           </component>

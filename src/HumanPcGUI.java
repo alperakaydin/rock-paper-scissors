@@ -44,10 +44,12 @@ public class HumanPcGUI extends JFrame {
 
 
         btn_oyuncu1_1.setText(kullanici.list.get(0).getClass().getName() + "\n" + kullanici.list.get(0).nesnePuaniGoster()[0]);
+
         btn_oyuncu1_2.setText(kullanici.list.get(1).getClass().getName() + "\n" + kullanici.list.get(1).nesnePuaniGoster()[0]);
         btn_oyuncu1_3.setText(kullanici.list.get(2).getClass().getName() + "\n" + kullanici.list.get(2).nesnePuaniGoster()[0]);
         btn_oyuncu1_4.setText(kullanici.list.get(3).getClass().getName() + "\n" + kullanici.list.get(3).nesnePuaniGoster()[0]);
         btn_oyuncu1_5.setText(kullanici.list.get(4).getClass().getName() + "\n" + kullanici.list.get(4).nesnePuaniGoster()[0]);
+
 
         btn_oyuncu2_1.setText("ComputerCard1");
         btn_oyuncu2_2.setText("ComputerCard2");
@@ -76,6 +78,7 @@ public class HumanPcGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 OynaHelperGui(3);
+                buttonIconConfigure();
             }
         });
         btn_oyuncu1_5.addActionListener(new ActionListener() {
@@ -95,15 +98,23 @@ public class HumanPcGUI extends JFrame {
     private void OynaHelperGui(int selectBtn) {
 
         int pcSelect = util.randomNumberGenerate(bilgisayar.list.size());
+        while (true){ // Ölü kartları elemek için
+            if (bilgisayar.list.get(pcSelect).nesnePuaniGoster()[0] <= 0) {
+                pcSelect = util.randomNumberGenerate(bilgisayar.list.size());
+            }else {
+                break;
+            }
+        }
+
+
         System.out.println(bilgisayar.list.size());
         System.out.println(kullanici.list.size());
 
-        oyunManager.hamleYap(kullanici.list.get(selectBtn), bilgisayar.list.get(pcSelect), kullanici, bilgisayar ,buttons);
-
+        oyunManager.hamleYap(kullanici.list.get(selectBtn), bilgisayar.list.get(pcSelect), kullanici, bilgisayar, buttons);
+        System.out.println(kullanici.list.toString() + " BUTON: " + selectBtn);
         btn_oyuncu1_select.setText(kullanici.list.get(selectBtn).getClass().getName());
         btn_oyuncu2_select.setText(bilgisayar.list.get(pcSelect).getClass().getName());
 
-        oyunManager.hamleController(kullanici, bilgisayar);
         kullanici.eliGoster();
         bilgisayar.eliGoster();
         buttonConfigure();
@@ -122,6 +133,24 @@ public class HumanPcGUI extends JFrame {
                 //buttons[1][i].setVisible(false);
             }
             buttons[1][i].setText(bilgisayar.list.get(i).getClass().getName() + "\n D: " + bilgisayar.list.get(i).nesnePuaniGoster()[0] + "\n S: " + bilgisayar.list.get(i).nesnePuaniGoster()[1]);
+        }
+
+    }
+    private void buttonIconConfigure(){
+        for (int i = 0; i < kullanici.list.size(); i++) {
+            if (kullanici.list.get(i) instanceof AgirTas){
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/tas.jpg"));
+            } else if (kullanici.list.get(i) instanceof Tas) {
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/tas.jpg"));
+            } else if (kullanici.list.get(i) instanceof OzelKagit) {
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/kagit.jpg"));
+            } else if (kullanici.list.get(i) instanceof Kagit) {
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/kagit.jpg"));
+            } else if (kullanici.list.get(i) instanceof UstaMakas) {
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/makas.jpg"));
+            }else {
+                buttons[0][i].setIcon(new ImageIcon("/Users/alper/IdeaProjects/deneme/src/icons/makas.jpg"));
+            }
         }
 
     }
