@@ -1,10 +1,8 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
-public class GUI extends JFrame{
+public class PcPcGUI extends JFrame{
     private JPanel mainPanel;
     private JButton btn_oyuncu1_1;
     private JButton btn_oyuncu1_2;
@@ -20,6 +18,7 @@ public class GUI extends JFrame{
     private JButton btn_oyuncu1_select;
     private JButton btn_oyuncu2_select;
     private JLabel lbl_skor;
+
     private JButton button1;
 
     private final Oyuncu oyuncu1;
@@ -30,7 +29,7 @@ public class GUI extends JFrame{
             {btn_oyuncu1_1,btn_oyuncu1_2,btn_oyuncu1_3,btn_oyuncu1_4,btn_oyuncu1_5},
             {btn_oyuncu2_1,btn_oyuncu2_2,btn_oyuncu2_3,btn_oyuncu2_4,btn_oyuncu2_5}
     };
-    public GUI(Oyuncu oyuncu1, Oyuncu oyuncu2){
+    public PcPcGUI(Oyuncu oyuncu1, Oyuncu oyuncu2){
         this.oyuncu1 = oyuncu1;
         this.oyuncu2 = oyuncu2;
 
@@ -42,18 +41,20 @@ public class GUI extends JFrame{
         setVisible(true);
 
 
+        {
+            btn_oyuncu1_1.setText(oyuncu1.list.get(0).getClass().getName() + "\n" + oyuncu1.list.get(0).nesnePuaniGoster()[0]);
+            btn_oyuncu1_2.setText(oyuncu1.list.get(1).getClass().getName() + "\n" + oyuncu1.list.get(1).nesnePuaniGoster()[0]);
+            btn_oyuncu1_3.setText(oyuncu1.list.get(2).getClass().getName() + "\n" + oyuncu1.list.get(2).nesnePuaniGoster()[0]);
+            btn_oyuncu1_4.setText(oyuncu1.list.get(3).getClass().getName() + "\n" + oyuncu1.list.get(3).nesnePuaniGoster()[0]);
+            btn_oyuncu1_5.setText(oyuncu1.list.get(4).getClass().getName() + "\n" + oyuncu1.list.get(4).nesnePuaniGoster()[0]);
 
-        btn_oyuncu1_1.setText(oyuncu1.list.get(0).getClass().getName() +"\n"+oyuncu1.list.get(0).nesnePuaniGoster()[0]);
-        btn_oyuncu1_2.setText(oyuncu1.list.get(1).getClass().getName() +"\n"+oyuncu1.list.get(1).nesnePuaniGoster()[0]);
-        btn_oyuncu1_3.setText(oyuncu1.list.get(2).getClass().getName() +"\n"+oyuncu1.list.get(2).nesnePuaniGoster()[0]);
-        btn_oyuncu1_4.setText(oyuncu1.list.get(3).getClass().getName() +"\n"+oyuncu1.list.get(3).nesnePuaniGoster()[0]);
-        btn_oyuncu1_5.setText(oyuncu1.list.get(4).getClass().getName() +"\n"+oyuncu1.list.get(4).nesnePuaniGoster()[0]);
+            btn_oyuncu2_1.setText(oyuncu2.list.get(0).getClass().getName());
+            btn_oyuncu2_2.setText(oyuncu2.list.get(1).getClass().getName());
+            btn_oyuncu2_3.setText(oyuncu2.list.get(2).getClass().getName());
+            btn_oyuncu2_4.setText(oyuncu2.list.get(3).getClass().getName());
+            btn_oyuncu2_5.setText(oyuncu2.list.get(4).getClass().getName());
+        }
 
-        btn_oyuncu2_1.setText(oyuncu2.list.get(0).getClass().getName());
-        btn_oyuncu2_2.setText(oyuncu2.list.get(1).getClass().getName());
-        btn_oyuncu2_3.setText(oyuncu2.list.get(2).getClass().getName());
-        btn_oyuncu2_4.setText(oyuncu2.list.get(3).getClass().getName());
-        btn_oyuncu2_5.setText(oyuncu2.list.get(4).getClass().getName());
         btn_oyuncu1_1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -95,7 +96,7 @@ public class GUI extends JFrame{
         int pcSelect = util.randomNumberGenerate(oyuncu1.list.size());
 
 
-        oyunManager.hamleYap(oyuncu1.list.get(selectBtn),oyuncu2.list.get(pcSelect));
+        oyunManager.hamleYap(oyuncu1.list.get(selectBtn),oyuncu2.list.get(pcSelect),oyuncu1,oyuncu2,buttons);
 
         btn_oyuncu1_select.setText(oyuncu1.list.get(selectBtn).getClass().getName());
         btn_oyuncu2_select.setText(oyuncu2.list.get(pcSelect).getClass().getName());

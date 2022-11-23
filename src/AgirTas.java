@@ -1,4 +1,4 @@
-public class AgirTas extends Tas {
+public class AgirTas extends Tas implements IBaseObject {
     public int sicaklik;
 
     public AgirTas() {

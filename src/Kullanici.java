@@ -5,7 +5,7 @@ public class Kullanici extends Oyuncu {
     public Kullanici() {
     }
 
-    public Kullanici(int oyuncuID, int oyuncuAdi, int skor, ArrayList<IBaseObject> list) {
+    public Kullanici(int oyuncuID, String oyuncuAdi, int skor, ArrayList<IBaseObject> list) {
         super(oyuncuID, oyuncuAdi, skor, list);
     }
 
@@ -28,6 +28,7 @@ public class Kullanici extends Oyuncu {
     @Override
     public void nesneSec(int[] secimList) {
         super.list = new ArrayList<>();
+
         for (int secim :
                 secimList) {
             if (secim == 0) {

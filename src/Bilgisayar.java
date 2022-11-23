@@ -6,7 +6,7 @@ public class Bilgisayar extends Oyuncu {
     public Bilgisayar() {
     }
 
-    public Bilgisayar(int oyuncuID, int oyuncuAdi, int skor, ArrayList<IBaseObject> list) {
+    public Bilgisayar(int oyuncuID, String oyuncuAdi, int skor, ArrayList<IBaseObject> list) {
         super(oyuncuID, oyuncuAdi, skor, list);
         this.list = list;
     }
